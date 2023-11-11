@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header-footer-style.css">
+    <title>LOGIN</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a class="a header" href="./index.html">
+                    <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo Funko">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                   <a class="navbar__link" href="./shop.html">VER TIENDA <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                   <ul class="submenu">
+                    <li class="submenu__item">
+                      <a href="" class="submenu__link">Funkos</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="" class="submenu__link">Remeras</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="" class="submenu__link">Llaveros</a>
+                    </li>
+                   </ul>
+                </li>
+                <li class="navbar__item">
+                   <a class="navbar__link" href="./admin.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../index.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form">
+        <h1>INGRESAR A MI CUENTA</h1>
+        <form action="">
+            <div class="input">
+                <label for="correo">Email:</label>
+                <input type="email" name="correo" id="correo" placeholder="jhondoe@correo.com">
+            </div>
+            <div class="input">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" placeholder=".........">
+            </div>
+            <div class="input2">
+                <button type="">Ingresar</button>
+                <div class="remember">
+                    <input type="checkbox" name="recordarme" id="recordarme">
+                    <label for="recordarme">Recordarme</label>
+                </div>
+            </div>
+        </form>
+        <a href="">Olvidé mi contraseña</a>
+    </div>
+
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            
+            <picture>
+                <img src="../img/branding/isotype.svg" alt="Isotipo Funko">
+            </picture>
+        </nav>
+      <p class="footer__copy">
+          All rights reserved 2023 - Funkoshop &copy;
+      </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header-footer-style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>EDIT</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a class="a header" href="./index.html">
+                    <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo Funko">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                   <a class="navbar__link" href="./shop.html">VER TIENDA <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                   <ul class="submenu">
+                    <li class="submenu__item">
+                      <a href="" class="submenu__link">Funkos</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="" class="submenu__link">Remeras</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="" class="submenu__link">Llaveros</a>
+                    </li>
+                   </ul>
+                </li>
+                <li class="navbar__item">
+                   <a class="navbar__link" href="./admin.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../index.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container__edit">
+        <h1>EDITAR ITEM</h1>
+        <form class="form edit" action="" method="">
+
+            <section class="container__edit__section1">
+                <div class="container__edit__section1__div">
+                    <label for="categoria">Categoría: </label>
+                    <select name="categoria" id="categoria">
+                        <option class="item__option" value="categoria">Figuras</option>
+                        <!-- <option class="item__option" value="prueba1">Opción de prueba</option> -->
+                    </select>
+                </div>
+                <div class="container__edit__section1__div">
+                    <label for="licencia">Licencia: </label>
+                    <select name="licencia" id="licencia">
+                        <option class="item__option" value="licencia">Naruto Shippuden</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="container__edit__section2">
+                <label class="container__edit__section2__label" for="nombre">Nombre del producto: </label>
+                <input type="text" name="nombre" id="nombre">
+            </section>
+
+            <section class="container__edit__text">
+                <textarea name="descripcion" id="descripcion"></textarea>
+            </section>
+
+            <section class="container__edit__section1">
+                <div class="container__edit__section2">
+                    <label for="sku">SKU: </label>
+                    <input type="text" name="sku" id="sku">
+                </div>
+                <div class="container__edit__section2">
+                    <label for="precio">Precio: </label>
+                    <input type="text" name="precio" id="precio">
+                </div>
+                <div class="container__edit__section2">
+                    <label for="stock">Stock: </label>
+                    <input type="text" name="stock" id="stock">
+                </div>
+            </section>
+
+            <section class="container__edit__section1">
+                <div class="container__edit__section2">
+                    <label for="descuento">Descuento: </label>
+                    <input type="text" name="descuento" id="descuento">
+                </div>
+                <div class="container__edit__section2">
+                    <label for="cuotas">Cuotas: </label>
+                    <select name="cuotas" id="cuotas">
+                        <option value="cuotas">6 Cuotas sin interés</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="container__edit__section1 section3">
+                <div class="container__edit__div3">
+                    <div class="container__edit__div">
+                        <label class="container__edit__section2__label" for="boton">Imágenes: </label>
+                        <button type="boton">Elegir archivos</button>
+                    </div>
+                    <label class="container__edit__section1__label" for="boton">No se ha seleccionado ningún archivo</label>
+                </div>
+                <div class="container__edit__div">
+                    <img src="../img/pokemon/charmander-1.webp" id="img-front" alt="Imagen del funko Charmander de frente"> 
+                    <img src="../img/pokemon/charmander-box.webp" id="img-back" alt="Imagen del funko Charmander de atras"> 
+                    <!-- imagenes de prueba -->
+                </div>
+                <div class="container__edit__div2">
+                    <label for="img-front">Frente</label>
+                    <label for="img-back">Dorso</label>
+                </div>
+            </section>
+
+            <button class="container__button" type="submit">Modificar Producto</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            
+            <picture>
+                <img src="../img/branding/isotype.svg" alt="Isotipo Funko">
+            </picture>
+        </nav>
+      <p class="footer__copy">
+          All rights reserved 2023 - Funkoshop &copy;
+      </p>
+    </footer>
+
+</body>
+</html>

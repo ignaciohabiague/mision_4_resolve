@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/create_style.css">
+    <link rel="stylesheet" href="../css/header-footer-style.css">
+    <title>CREATE</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a class="a header" href="./index.html">
+                    <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo Funko">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                   <a class="navbar__link" href="./shop.html">VER TIENDA <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                   <ul class="submenu">
+                    <li class="submenu__item">
+                      <a href="" class="submenu__link">Funkos</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="" class="submenu__link">Remeras</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="" class="submenu__link">Llaveros</a>
+                    </li>
+                   </ul>
+                </li>
+                <li class="navbar__item">
+                   <a class="navbar__link" href="./admin.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../index.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1 class="titulo-item">CREAR NUEVO ITEM</h1>
+        <form action="">
+            <div>
+                <label class="label-uno" for="categorias">Categoría:</label>
+                <select class="select-uno" name="categorias" id="categorias">
+                    <option selected disabled hidden>Seleccionar</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <label class="label-dos" for="licencias">Licencia:</label>
+                <select class="select-dos" name="licencias" id="licencias">                    
+                    <option selected disabled hidden>Seleccionar</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div>
+                <label class="label-tres" for="nombre-producto">Nombre del producto:</label>
+                <input class="input-kakashi" type="text" name="nombre-producto" id="nombre-producto" placeholder="Kakashi Hatake Shippuden Saga">
+            </div>
+            <div>
+                <textarea class="area-texto" name="descripcion" id="descripcion" placeholder="Descripción del producto"></textarea>
+            </div>
+            <div>
+                <label class="label-sku" for="sku">SKU:</label>
+                <input class="input-sku" type="text" name="sku" id="sku" placeholder="SSK111AB001">
+                <label class="label-precio" for="precio">Precio:</label>
+                <input class="input-precio" type="number" name="precio" id="precio" placeholder="$0.000,00">
+                <label class="label-stock" for="stock">Stock:</label>
+                <input class="input-stock" type="number" name="stock" id="stock" placeholder="0">
+            </div>
+            <div>
+                <label class="label-descuento" for="descuento">Descuento:</label>
+                <input class="input-descuento" type="number" name="descuento" id="descuento" placeholder="0%">
+                <label class="label-cuotas" for="cuotas">Cuotas:</label>
+                <select class="select-cuotas" name="cuotas" id="cuotas">
+                    <option selected disabled hidden>3 Cuotas sin interés</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div>
+                <label class="imagenes" for="imagenes">Imágenes:</label>
+                <button class="boton-elegir">Elegir archivos</button>
+                <a class="texto-seleccion-archivos">No se ha seleccionado ningún archivo</a>
+            </div>
+            <div>
+                <button class="boton-agregar" type="">Agregar Producto</button>
+                <button class="boton-limpiar" type="">Limpiar</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            
+            <picture>
+                <img src="../img/branding/isotype.svg" alt="Isotipo Funko">
+            </picture>
+        </nav>
+      <p class="footer__copy">
+          All rights reserved 2023 - Funkoshop &copy;
+      </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header-footer-style.css">
+    <link rel="stylesheet" href="../css/register_style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>REGISTER</title>
+</head>
+<body>
+    <header>
+            <nav class="navbar container">
+                <picture class="navbar__logo">
+                    <a class="a header" href="./index.html">
+                        <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo Funko">
+                    </a>
+                </picture>
+                <ul class="navbar__menu">
+                    <li class="navbar__item with-submenu">
+                       <a class="navbar__link" href="./shop.html">VER TIENDA <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                       <ul class="submenu">
+                        <li class="submenu__item">
+                          <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                       </ul>
+                    </li>
+                    <li class="navbar__item">
+                       <a class="navbar__link" href="./admin.html">ADMIN</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="../index.html">SALIR</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <main class="container">
+        <div class="container__div">
+            <h1 class="container__h1">CREA TU CUENTA</h1>
+            <h2 class="container__h2">Completa el formulario para ser parte del mundo de los Funkos</h2>
+            <form class="container__form" action="">
+                <div class="input">
+                    <label class="container__form__label" for="nombre">Nombre:</label>
+                    <input class="container__form__input" type="text" name="nombre" id="nombre" placeholder="John">
+                </div>
+                <div class="input">
+                    <label class="container__form__label" for="apellido">Apellido:</label>
+                    <input class="container__form__input" type="text" name="apellido" id="apellido" placeholder="Doe">
+                </div>
+                <div class="input">
+                    <label class="container__form__label" for="correo">Email:</label>
+                    <input class="container__form__input" type="text" name="correo" id="correo" placeholder="johndoe@correo.com">
+                </div>
+                <div class="input">
+                    <label class="container__form__label" for="contraseña">Contraseña:</label>
+                    <input class="container__form__input" type="password" name="contraseña" id="contraseña" placeholder=".........">
+                </div>
+                <div class="input">
+                    <label class="container__form__label" for="repetir-contraseña">Repita Contraseña: </label>
+                    <input class="container__form__input" type="password" name="repetir-contraseña" id="repetir-contraseña" placeholder=".........">
+                </div>
+                <div class="container__div__tyc">
+                    <button>Registrar</button>
+                    <input type="checkbox" name="tyc" id="tyc">
+                    <label for="tyc">Acepto <a href="">Términos y Condiciones</a></label>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            
+            <picture>
+                <img src="../img/branding/isotype.svg" alt="Isotipo Funko">
+            </picture>
+        </nav>
+      <p class="footer__copy">
+          All rights reserved 2023 - Funkoshop &copy;
+      </p>
+    </footer>
+
+</body>
+</html>
